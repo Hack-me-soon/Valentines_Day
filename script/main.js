@@ -1,3 +1,12 @@
+window.addEventListener('load', function() {
+    var audio = document.getElementById('background-music');
+    audio.play().catch(function(error) {
+        console.error('Audio playback failed:', error);
+    });
+});
+
+
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
